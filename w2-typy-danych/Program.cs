@@ -14,27 +14,27 @@
         private static void ex5()
         {
             Console.Write("Podaj imię: ");
-            String name = Console.ReadLine();
+            string name = Console.ReadLine();
             Console.Write("Podaj nazwisko: ");
-            String lastname = Console.ReadLine();
+            string lastname = Console.ReadLine();
             Console.Write("Podaj nr telefonu: ");
-            String phoneNumber = Console.ReadLine();
+            string phoneNumber = Console.ReadLine();
             Console.Write("Podaj adres e-mail: ");
-            String email = Console.ReadLine();
+            string email = Console.ReadLine();
             Console.Write("Podaj wzrost: ");
-            String heightStr = Console.ReadLine();
+            string heightStr = Console.ReadLine();
             float height = float.Parse(heightStr);
             Console.Write("Podaj wagę: ");
-            String weightStr = Console.ReadLine();
+            string weightStr = Console.ReadLine();
             float weight = float.Parse(weightStr);
             Console.Write("Podaj wiek: ");
-            String ageStr = Console.ReadLine();
+            string ageStr = Console.ReadLine();
             int age = Int32.Parse(ageStr);
             Console.Write("Podaj rok urodzenia: ");
-            String yearOfBirthStr = Console.ReadLine();
+            string yearOfBirthStr = Console.ReadLine();
             int yearOfBirth = Int32.Parse(yearOfBirthStr);
             Console.Write("Podaj numer buta: ");
-            String shoeSizeStr = Console.ReadLine();
+            string shoeSizeStr = Console.ReadLine();
             float shoeSize = float.Parse(shoeSizeStr);
 
             Console.WriteLine($"{name} {lastname}, @: {email}, M: {phoneNumber}, H: {height}, W: {weight}, Lat: {age}, Urodzony: {yearOfBirth}");
@@ -43,7 +43,7 @@
         private static void ex4()
         {
             int a;
-            String b;
+            string b;
             float c;
 
             a = 10;
@@ -60,9 +60,9 @@
             do
             {
                 Console.Write("podaj długość pierwszego boku: ");
-                String aString = Console.ReadLine();
+                string aString = Console.ReadLine();
                 Console.Write("podaj długość drugiego boku: ");
-                String bString = Console.ReadLine();
+                string bString = Console.ReadLine();
                 _ = (Int32.TryParse(aString, out a) && Int32.TryParse(bString, out b)) 
                     ? diagonal = Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2)) 
                     : diagonal = 0;
@@ -84,11 +84,11 @@
         private static void ex1()
         {
             Console.WriteLine("zad.1:");
-            String name;
-            String lastName;
+            string name;
+            string lastName;
             int age;
             Sex sex;
-            uint pesel;
+            string pesel;
             uint id;
         }
     }
